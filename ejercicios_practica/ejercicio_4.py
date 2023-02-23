@@ -54,4 +54,23 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+
+    ax1.plot(x, y1, c='r', label='y = x**2')
+    ax1.legend()
+    ax1.grid()
+    ax2.plot(x, y2, c='k', label='y = x**3')
+    ax2.legend()
+    ax2.grid()
+    ax3.plot(x, y3, c='g', label='y = x**4')
+    ax3.legend()
+    ax3.grid()
+    ax4.plot(x, y4, c='b', label='y= raiz(x)')
+    ax4.legend()
+    ax4.grid()
+    plt.show()
     print("terminamos")

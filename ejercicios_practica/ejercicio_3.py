@@ -33,5 +33,12 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    fig.suptitle('Grafico de tangente hiperbolica', fontsize='20')
+    ax.grid()
+    ax.scatter(x, y, color=(0, 0.1, 0.5), label='y=tanh(x)')
+    ax.legend()
+    plt.show()
 
     print("terminamos")

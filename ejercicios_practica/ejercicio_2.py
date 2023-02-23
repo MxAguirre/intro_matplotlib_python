@@ -46,4 +46,15 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Graficas de y en funcion de x', fontsize='20')
+    ax1 = fig.add_subplot(1, 2, 1)
+    ax2 = fig.add_subplot(1, 2, 2)
+
+    ax1.plot(x, y1, color='g' ,label='y=x**2')
+    ax2.plot(x, y2, color='r' ,label='y=x**3')
+    ax1.legend()
+    ax2.legend()
+    plt.show()
+
     print("terminamos")

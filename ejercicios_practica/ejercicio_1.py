@@ -35,4 +35,13 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    fig.suptitle('Grafica de y en funcion de x', fontsize='15')
+    ax.plot(x, y, color='k', label='y=x**2', marker='+', ms='10',)
+    ax.legend()
+    ax.grid()
+    ax.set_facecolor('whitesmoke')
+    plt.show()
+
     print("terminamos")
